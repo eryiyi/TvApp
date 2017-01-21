@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_height"
+            android:background="@color/mm_main_bg_mine_top">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:id="@+id/title"
+                android:layout_centerInParent="true"
+                android:text="贵人影院"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:id="@+id/back"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/md_return"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                />
+    </RelativeLayout>
+
+        <!--GridView横向滚动-->
+        <com.Lbins.TvApp.widget.ColumnHorizontalScrollView
+                android:id="@+id/mColumnHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:scrollbars="none">
+            <LinearLayout
+                    android:id="@+id/mRadioGroup_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"/>
+        </com.Lbins.TvApp.widget.ColumnHorizontalScrollView>
+
+
+        <View android:layout_width="match_parent"
+              android:layout_below="@+id/mColumnHorizontalScrollView"
+              android:id="@+id/liner_one"
+              android:background="@color/liner_divider"
+              android:layout_height="0.5dp"></View>
+
+        <!--<com.Lbins.TvApp.library.PullToRefreshListView-->
+                <!--android:id="@+id/lstv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:cacheColorHint="#00000000"-->
+                <!--android:divider="@drawable/home_item_shadow"-->
+                <!--android:dividerHeight="8dp"-->
+                <!--android:fadingEdge="none"-->
+                <!--android:fastScrollEnabled="false"-->
+                <!--android:footerDividersEnabled="false"-->
+                <!--android:headerDividersEnabled="false"-->
+                <!--android:layout_below="@+id/liner_one"-->
+                <!--android:smoothScrollbar="true"/>-->
+
+        <View
+                android:id="@+id/category_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffdddddd"/>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="2.0dip"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"/>
+
+</LinearLayout>
