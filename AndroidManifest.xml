@@ -220,14 +220,14 @@
         <!--// *****************************高德地图sdk*******************************************-->
         <meta-data
                 android:name="com.amap.api.v2.apikey"
-                android:value="8fce261132d5ea7ad5a38717bc2c453e" />
+                android:value="ceaa96e435079470d63e1e51df2fcb09" />
 
         <!-- 定位需要的服务 -->
         <service android:name="com.amap.api.location.APSService" >
         </service>
 
         <!-- 设置贵人应用的AppKey -->
-        <meta-data android:name="EASEMOB_APPKEY"  android:value="826321978#guiren" />
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="826321978#lbinstvapp" />
         <!-- 声明SDK所需的service SDK核心功能-->
         <service android:name="com.hyphenate.chat.EMChatService" android:exported="true"/>
         <!-- 声明SDK所需的receiver -->
@@ -577,7 +577,7 @@
         <!-- umeng appkey，可忽略 -->
         <meta-data
                 android:name="UMENG_APPKEY"
-                android:value="571c65c467e58e5fa7002aa7" >
+                android:value="5883070e07fe65220d0003a2" >
         </meta-data>
         <meta-data android:value="hyphenate" android:name="UMENG_CHANNEL"/>
         <!--<meta-data-->
